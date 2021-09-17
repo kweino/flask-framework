@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@kweino">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Closing Price Checker!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.3.2/bokeh.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.3.2/bokeh-widgets.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.3.1/bokeh-tables.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stock Price Checker</h1>
+      <div>
+        <a href="/about">About</a> |
+        <a target="_blank" href="https://www.heroku.com/">Heroku</a> |
+        <a target="_blank" href="http://flask.pocoo.org/">Flask</a> |
+        <a target="_blank" href="http://jinja.pocoo.org/">Jinja2</a> |
+        <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+      </div>
+      {% block content %}
+      {% endblock %}
+    </div>
+    <!-- Bootstrap core JavaScript================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.3.2.min.js"></script>
+  <script src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.3.2.min.js"></script>
+</html>
