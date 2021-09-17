@@ -1,5 +1,6 @@
 #Libraries
-from dotenv import dotenv_values
+#from dotenv import dotenv_values
+import os
 import requests
 import pandas as pd
 from bokeh.plotting import figure, output_file, save, show
@@ -9,8 +10,8 @@ from bokeh.embed import components
 
 def stockAnalysis(ticker_symbol, ticker_date):
     #import .env file to protect API Key during local development
-    config = dotenv_values(".env")
-    api_key = config['API_KEY']
+    #config = dotenv_values(".env")
+    api_key = os.environ['API_KEY']
 
     #get the data from the AlphaVantage API
     url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={ticker_symbol}&outputsize=full&apikey={api_key}'
